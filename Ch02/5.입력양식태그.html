@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5. 입력양식태그</title>
+</head>
+<body>
+    <h3>입력 양식 태그</h3>
+    <h4>기본 태그</h4>
+    <form action="#">
+        <label>아이디<input type="text" name="uid"></label><br>
+        <label>비밀번호<input type="password" name="pass"></label><br>
+        <input type="submit" value="로그인">
+    </form>
+
+    <h4>기타 입력</h4>
+    <form action="#">
+        <h3>취미를 고르세요</h3>
+        <label><input type="checkbox" name="hobby" value="1">등산</label>
+        <label><input type="checkbox" name="hobby" value="2">여행</label>
+        <label><input type="checkbox" name="hobby" value="3">영화</label>
+        <label><input type="checkbox" name="hobby" value="4">게임</label>
+        <label><input type="checkbox" name="hobby" value="5">운동</label>
+
+        <h3>성별을 입력하세요</h3>
+        <label><input type="radio" name="gender" value="M">남자</label>
+        <label><input type="radio" name="gender" value="F">여자</label>
+
+        <h3>지역을 선택하세요</h3>
+        <select name="addr">
+            <option>서울</option>
+            <option>대전</option>
+            <option>대구</option>
+            <option>부산</option>
+            <option>광주</option>
+        </select>
+
+        <h3>날짜를 선택하세요</h3>
+        <input type="date" name="date">
+
+        <h3>자기소개를 하세요</h3>
+        <textarea name="myself" cols="30" rows="10"></textarea>
+
+        <h5>전송하기</h5>
+        <input type="submit" value="전송">
+    </form>
+</body>
+</html>
