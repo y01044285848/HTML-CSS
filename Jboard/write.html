@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>write</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .write {
+            border: 1px solid red;
+            width: 720px;
+            margin: 60px auto;
+            box-sizing: border-box;
+        }
+
+        .write>article {}
+
+        .write table {
+            border-top: 2px solid #111;
+            width: 100%;
+            border-spacing: 0;
+            border-collapse: collapse;
+            margin-top: 6px;
+        }
+
+        .write>article>form>table tr {}
+        .write>article>form>table td {
+            padding: 12px;
+            border-top: 1px solid #e9e9e9;
+            border-bottom: 1px solid #e9e9e9;
+        }
+        
+        .write>article>form>table td:nth-child(1) {
+            width: 100px;
+            text-align: center;
+            background: #f5f8f9;
+        }
+        .write>article>form>table td>input[type=text] {
+            width: 100%;
+            
+            outline: none;
+            resize: none;
+            border: 0;
+        }
+        .write>article>form>table td>textarea {
+            width: 100%;
+            height: 280px;
+            outline: none;
+            resize: none;
+            border: 0;
+        }
+
+        .wirte>article>form>div {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h3>Jboard v1.0</h3>
+            <p>
+                <span id="nick">홍길동</span>님 반갑습니다.
+                <a href="#">로그아웃</a>
+            </p>
+        </header>
+        <main>
+            <section class="write">
+                <h3>글쓰기</h3>
+                <article>
+                    <form action="#">
+                        <table>
+                            <tr>
+                                <td>제목</td>
+                                <td><input type="text" name="title" placeholder="제목을 입력하세요." /></td>
+                            </tr>
+                            <tr>
+                                <td>내용</td>
+                                <td>
+                                    <textarea name="content"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>첨부</td>
+                                <td><input type="file" name="file" /></td>
+                            </tr>
+                        </table>
+                        <div>
+                            <a href="#" class="btnCancel">취소</a>
+                            <a href="#" class="btnWrite">작성완료</a>
+                        </div>
+                    </form>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p>copyright ⓒ이승윤</p>
+        </footer>
+    </div>
+</body>
+
+</html>
