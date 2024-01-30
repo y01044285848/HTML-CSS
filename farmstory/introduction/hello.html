@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팜스토리</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .bg {
+            position: relative;
+            background: url("../images/sub_top_bg.jpg");
+        }
+
+        .bg>img {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+        }
+
+        section {}
+
+        section>aside {
+            overflow: hidden;
+        }
+
+        section>aside>img {
+            margin: 16px;
+        }
+
+        section>aside>ul {
+            width: 175px;
+            height: 233px;
+            padding-top: 26px;
+            box-sizing: border-box;
+            background: url("../images/sub_aside_bg_lnb.png");
+        }
+
+        section>aside>ul>li {
+            width: 100%;
+            height: 29px;
+            margin-bottom: 6px;
+        }
+
+        section>aside>ul>li:nth-child(1) {
+            background: url("../images/sub_cate1_lnb1_ov.png");
+        }
+
+        section>aside>ul>li:nth-child(2) {
+            background: url("../images/sub_cate1_lnb2.png");
+        }
+
+        section>aside>ul>li:nth-child(2):hover {
+            background: url("../images/sub_cate1_lnb2_ov.png");
+        }
+        .content>nav{
+            position: relative;
+            margin-bottom: 40px;
+        }
+        .content>nav>img{
+            position: absolute;
+            bottom: 4px;
+            left: 0px;
+        }
+        .content>nav>p{
+            position: absolute;
+            bottom: 4px;
+            right: 0;
+            padding-left: 10px;
+            color: #8c8c8c;
+            background: url("../images/sub_page_nav_ico.gif");
+            background-position: left;
+            background-repeat: no-repeat;
+        }
+        .content>nav>p>span{
+            font-weight: bold;
+            color: #91BA15;
+        }
+        section>div{}
+        section>div>img{
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <a href="#" class="logo"><img src="../images/logo.png" alt=""></a>
+            <p>
+                <a href="#">HOME|</a>
+                <a href="#">로그인|</a>
+                <a href="#">회원가입|</a>
+                <a href="#">관리자|</a>
+                <a href="#">고객센터</a>
+            </p>
+            <img src="../images/head_txt_img.png" alt="3만원이상 무료배송/팜카드 10%적립">
+            <ul class="gnb">
+                <li><a href="#">팜스토리 소개</a></li>
+                <li>
+                    <a href="#">장보기</a>
+                    <img src="../images/head_menu_badge.png" alt="30% 할인">
+                </li>
+                <li><a href="#">농작물이야기</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">커뮤니티</a></li>
+            </ul>
+        </header>
+        <!--///////////////////////////////////////////////////////////////////////////////-->
+        <div id="sub" class="introduction">
+            <div class="bg">
+                <img src="../images/sub_top_tit1.png" alt="">
+            </div>
+            <section>
+                <aside>
+                    <img src="../images/sub_aside_cate1_tit.png" alt="">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </aside>
+                <article class="content">
+                    <nav>
+                        <img src="../images/sub_nav_tit_cate1_tit1.png" alt="인사말">
+                        <p>HOME > 팜스토리소개 > <span>인사말</span></p>
+                    </nav>
+                    <div>
+                        <img src="../images/sub_page1_article_txt.png" alt="">
+                        <p></p>
+                    </div>
+                </article>
+            </section>
+
+        </div>
+        <!--///////////////////////////////////////////////////////////////////////////////-->
+        <footer>
+            <img src="../images/footer_logo.png" alt="logo">
+            <p>
+                (주)팜스토리 / 사업자등록번호 123-45-67890 / 통신판매업신고 제 2013-팜스토리구-123호 / 벤처기업확인 서울지방중소기업청 제 012345678-9-01234호<br>
+                등록번호 팜스토리01234 (2013.04.01) / 발행인 : 홍길동<br>
+                대표 : 홍길동 / 이메일 : email@mail.mail / 전화 : 01) 234-5678 / 경기도 성남시 잘한다구 신난다동 345<br>
+                <span>Copyright(C)홍길동 All rights reserved.</span><br>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
